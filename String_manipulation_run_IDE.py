@@ -7,7 +7,7 @@ def isPalindrome(s = 'A man, a plan, a canal: Panama'):
     # Until left one char
     while len(strs)>1:
         # pop 1st String => pop(0), pop last String => pop()
-        if strs.pop(0) != strs.pop():
+        if strs.pop(0) != strs.pop(): # O(n) + O(1)
             return False
     return True
 print(isPalindrome())
